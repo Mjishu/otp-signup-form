@@ -8,36 +8,41 @@
 </head>
 <body>
     <div class="navbar">
-        <img src="" alt="Logo">
+        <img src="../images/odin-lined.png" alt="Logo" height="50px" width="50px">
         <div class="links">
-            <a href="">Link 1</a>
-            <a href="">Link 2</a>
-            <a href="">Link 3</a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Shop</a></li>
+            </ul>
         </div>
     </div>
     <form action="blah.com/blah" method="post">
         <div class="col1">
-            <label for="firstName" class="label">First Name</label>
-            <input type="text" name="firstName" id="firstName" class="input">
+            <label for="firstName" class="label">*First Name</label>
+            <input type="text" name="firstName" id="firstName" class="input" required>
 
-            <label for="user_email" class="label">Email</label>
-            <input type="email" name="email" id="user_email" class="input">
+            <label for="user_email" class="label">*Email</label>
+            <input type="email" name="email" id="user_email" class="input" required>
 
-            <label for="password" class="label">Password</label>
-            <input type="password" name="password" id="password" class="input">   
+            <label for="password" class="label">*Password</label>
+            <input type="password" name="password" id="password" class="input" required>   
         </div>
         <div class="col2">
             <label for="lastName" class="label">Last Name</label>
             <input type="text" name="firstName" id="lastName" class="input"> 
 
             <label for="phoneNum" class="label">Phone Number</label>
-            <input type="number" name="phoneNum" id="phoneNum" class="input">
+            <input type="text" name="phoneNum" id="phoneNum" class="input">
 
             <label for="passwordConf" class="label">Confirm Password</label>
             <input type="password" name="passwordConf" id="passwordConf" class="input">
 
+            
         </div>
-    
+        <button type="submit" class="btnSubmit">Create Account</button>
+        <p class="login">Already have an account? <a href="" class="loginLink">Log in</a></p>
     </form>
+    <p class="credit"><a href="https://unsplash.com/@adrenalinehigh" target="_blank">@Jeremiah Curtis</a> on <a href="https://unsplash.com/" target="_blank">unsplash.</a></p>
 </body>
 </html>
